@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SoruLog — Hesap ve veri silme</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f6f7f9;
+      --card: #fff;
+      --text: #1a1a1a;
+      --muted: #5c5c5c;
+      --border: #e2e4e8;
+      --accent: #1565c0;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121212;
+        --card: #1e1e1e;
+        --text: #eee;
+        --muted: #a0a0a0;
+        --border: #333;
+        --accent: #64b5f6;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.55;
+      margin: 0;
+      padding: 1.25rem;
+      background: var(--bg);
+      color: var(--text);
+    }
+    main {
+      max-width: 42rem;
+      margin: 0 auto;
+      background: var(--card);
+      padding: 1.75rem 1.5rem;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+    }
+    h1 { font-size: 1.5rem; margin: 0 0 0.35rem; }
+    .sub { color: var(--muted); font-size: 0.95rem; margin: 0 0 1.5rem; }
+    h2 {
+      font-size: 1.15rem;
+      margin: 1.75rem 0 0.65rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border);
+    }
+    h2:first-of-type { border-top: 0; padding-top: 0; margin-top: 0; }
+    ul { padding-left: 1.25rem; margin: 0.5rem 0 1rem; }
+    li { margin: 0.35rem 0; }
+    p { margin: 0.65rem 0; }
+    a { color: var(--accent); }
+    .note {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>SoruLog</h1>
+    <p class="sub">
+      YKS / LGS / KPSS soru takibi ve paylaşım uygulaması — hesap silme ve hesabı kapatmadan veri silme bilgileri.
+    </p>
+
+    <h2 id="hesap-silme">Hesabınızı silme</h2>
+    <p>Hesabınızı ve buna bağlı kimlik kaydını kaldırmak için uygulama içinde şu adımları izleyin:</p>
+    <ol>
+      <li>SoruLog uygulamasına giriş yapın.</li>
+      <li><strong>Ayarlar</strong> ekranına gidin.</li>
+      <li><strong>Hesabı Sil</strong> seçeneğine dokunun.</li>
+      <li>Onaylayın. İşlem tamamlandığında oturumunuz kapanır ve hesabınız silinir.</li>
+    </ol>
+    <p>
+      Hesap silindiğinde kimlik doğrulama tarafındaki kullanıcı kaydınız ve buna bağlı kişisel hesap verileriniz kaldırılır.
+      Kötüye kullanımı önlemek için aynı e-posta adresiyle hemen yeniden kayıt kısıtlanabilir; bu teknik önlem için e-posta adresi
+      <strong>yaklaşık 30 dakikalık</strong> bir süreyle sınırlı şekilde saklanabilir, ardından yalnızca bu kısıt amacıyla gerekli süre dolunca işlenmez.
+    </p>
+
+    <h2 id="veri-silme">Hesabı silmeden veri silme</h2>
+    <p>Hesabınızı kapatmadan, eklediğiniz içeriklerin bir kısmını veya tamamını uygulama içinden kaldırabilirsiniz:</p>
+    <ul>
+      <li><strong>Sorular:</strong> İlgili soru veya klasör menüsünden <strong>Soruyu Sil</strong> veya klasörü (içindeki sorularla birlikte) silme seçeneklerini kullanın.</li>
+      <li><strong>Akış gönderileri:</strong> Kendi gönderinizin menüsünden <strong>Gönderiyi Sil</strong> seçeneğini kullanın.</li>
+      <li><strong>Sohbet:</strong> Sohbet listesi veya sohbet ekranında sunulan <strong>sohbeti silme / temizleme</strong> adımlarını kullanın.</li>
+      <li><strong>Profil:</strong> <strong>Profili düzenle</strong> üzerinden görünen ad, kullanıcı adı veya profil fotoğrafını güncelleyebilir veya kaldırabilirsiniz.</li>
+    </ul>
+    <p>Tüm hesabınızı ve kalan verileri tamamen kaldırmak için yukarıdaki <a href="#hesap-silme">hesap silme</a> bölümüne bakın.</p>
+
+    <p>
+      Ek yardım için: <a href="mailto:mertprojehesap@gmail.com">mertprojehesap@gmail.com</a>
+    </p>
+
+    <p class="note">Son güncelleme: 3 Nisan 2026</p>
+  </main>
+</body>
+</html>
