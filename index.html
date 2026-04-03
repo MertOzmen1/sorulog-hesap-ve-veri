@@ -119,17 +119,25 @@
       gap: 12px;
     }
 
+    /* ORİJİNAL LOGO */
     .logo{
       width: 44px;
       height: 44px;
       border-radius: 14px;
-      background: linear-gradient(135deg, var(--primary), var(--tertiary));
-      box-shadow: 0 10px 20px rgba(37, 99, 235, 0.22);
+      background: rgba(255,255,255,0.55);
+      border: 1px solid var(--border);
+      box-shadow: 0 10px 20px rgba(37, 99, 235, 0.12);
       display: grid;
       place-items: center;
-      color: #fff;
-      font-weight: 700;
-      letter-spacing: -0.02em;
+      overflow: hidden;
+      flex: 0 0 auto;
+    }
+
+    .logo-icon{
+      width: 28px;
+      height: 28px;
+      object-fit: contain;
+      display: block;
     }
 
     .titles h1{
@@ -141,6 +149,10 @@
       margin: 2px 0 0;
       color: var(--muted);
       font-size: 0.98rem;
+    }
+
+    @media (prefers-color-scheme: dark){
+      .logo{ background: rgba(17,27,46,0.7); }
     }
 
     .pill{
@@ -217,10 +229,6 @@
       color: var(--text);
     }
 
-    .muted{
-      color: var(--muted);
-    }
-
     .link{
       color: var(--primary);
       text-decoration: none;
@@ -235,6 +243,7 @@
       color: var(--muted);
       font-size: 0.92rem;
     }
+
     .kbd{
       font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
       font-size: 0.9em;
@@ -243,6 +252,7 @@
       border: 1px solid var(--border);
       background: rgba(255,255,255,0.55);
     }
+
     @media (prefers-color-scheme: dark){
       .kbd{ background: rgba(17,27,46,0.7); }
     }
@@ -254,7 +264,10 @@
     <div class="hero">
       <div class="hero-inner">
         <div class="brand">
-          <div class="logo">S</div>
+          <div class="logo" aria-hidden="true">
+            <img class="logo-icon" src="app_logo_clean.png" alt="SoruLog" />
+          </div>
+
           <div class="titles">
             <h1>SoruLog</h1>
             <p>Hesap silme ve hesap silmeden veri silme bilgilendirme sayfası</p>
@@ -293,7 +306,7 @@
       <section class="card" aria-labelledby="veri-silme">
         <h2 id="veri-silme">Hesabı silmeden veri silme</h2>
         <p class="lead">
-          Hesabınızı kapatmadan, uygulama içinde eklediğiniz içeriklerin bir kısmını veya tamamını kaldırabilirsiniz:
+          Hesabınızı kapatmadan, eklediğiniz içeriklerin bir kısmını veya tamamını uygulama içinden kaldırabilirsiniz:
         </p>
 
         <div class="section">
@@ -306,7 +319,8 @@
         </div>
 
         <p class="footer-note">
-          Tüm hesabınızı ve kalan verileri tamamen kaldırmak için <a class="link" href="#hesap-silme">hesap silme</a> bölümüne bakın.
+          Tüm hesabınızı ve kalan verileri tamamen kaldırmak için
+          <a class="link" href="#hesap-silme">hesap silme</a> bölümüne bakın.
         </p>
       </section>
 
@@ -314,12 +328,11 @@
         <h2>Yardım</h2>
         <p class="lead">
           Ek sorularınız veya silme talepleriniz için aşağıdaki e-posta adresinden bizimle iletişime geçebilirsiniz:
-          <br />
+        </p>
+
+        <p class="footer-note">
           <a class="link" href="mailto:mertprojehesap@gmail.com">mertprojehesap@gmail.com</a>
         </p>
-        <div class="footer-note">
-          Not: Bu sayfa yalnızca bilgilendirme amaçlıdır; silme işlemleri uygulama içindeki adımlarla gerçekleştirilir.
-        </div>
       </section>
     </div>
   </div>
